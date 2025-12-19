@@ -10,7 +10,10 @@
 
 📅 Date: 19 December 2025
 📌 Activities Completed
+
 🔺 Learned all data types in C#
 🔹 Practiced type casting between data types
 ⬛ Learned about operators in C#
 ⭐ Understood how different operators work
+🔸 Learned about access modifiers
+🟢 Started working on practice questions
