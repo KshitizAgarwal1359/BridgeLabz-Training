@@ -39,5 +39,15 @@ class Operators{
 		Console.WriteLine("Post-Increment x "+(x++));
 		Console.WriteLine("After post-increment x "+(x));
 		Console.WriteLine("Pre-decrement x "+(--x));
+		//is operator
+		object dataValue = "Hello C#";
+        object numberValue = 100;
+        bool isString = dataValue is string;
+        bool isInt = dataValue is int;
+        bool isNumberInt = numberValue is int;
+
+        Console.WriteLine("dataValue is string: " + isString);
+        Console.WriteLine("dataValue is int: " + isInt);
+        Console.WriteLine("numberValue is int: " + isNumberInt);
 	}
 }
