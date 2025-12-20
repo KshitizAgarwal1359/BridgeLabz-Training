@@ -17,3 +17,9 @@
 ⭐ Understood how different operators work
 🔸 Learned about access modifiers
 🟢 Started working on practice questions
+
+📅 Date: 20 December 2025
+📌 Activities Completed
+
+🟢 Completed the practice sheet questions
+🔹 Practiced and revised access modifiers in C#
