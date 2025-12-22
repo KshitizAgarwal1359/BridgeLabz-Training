@@ -52,11 +52,3 @@ for, while, do–while
 🟢 Solved multiple control flow practice problems
 
 ⭐ Improved logical thinking and problem-solving skills
-
-✅ Notes
-
-Markdown lists and headings are now GitHub compatible
-
-Proper spacing ensures clean rendering
-
-Easy to extend for daily logs
