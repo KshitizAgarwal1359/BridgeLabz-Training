@@ -52,3 +52,33 @@ for, while, do–while
 🟢 Solved multiple control flow practice problems
 
 ⭐ Improved logical thinking and problem-solving skills
+
+
+📅 Date: 23 December 2025
+📌 Activities Completed
+
+🟢 Learned Arrays in C#
+
+Understanding array declaration and initialization
+
+Accessing and modifying array elements
+
+🟣 Studied Multidimensional Arrays
+
+Concept of 2D arrays
+
+Row and column traversal
+
+Real-world use cases of 2D arrays
+
+🔵 Practiced 2D Array Programs
+
+Storing and processing multiple values
+
+Performing calculations using 2D arrays
+
+⭐ Completed Practice Questions on Arrays
+
+Strengthened logic building
+
+Improved problem-solving using arrays
