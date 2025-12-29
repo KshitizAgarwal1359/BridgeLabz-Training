@@ -82,3 +82,32 @@ Performing calculations using 2D arrays
 Strengthened logic building
 
 Improved problem-solving using arrays
+
+## 📅 Date: 24 December 2025
+### 📌 Topics Covered
+- Learned the **basics of C# methods**
+- Understood:
+  - Method declaration and invocation
+  - Parameters and return types
+- ✅ Completed **practice questions on C# methods**
+
+---
+
+## 📅 Date: 26 December 2025
+### 📌 Topics Covered
+- Learned about **C# Strings**
+- Explored:
+  - String basics and immutability
+  - Common string operations and functionality
+- ✅ Solved **practice problems on C# strings**
+- ✅ Solved **additional practice problems using built-in string functions**
+
+---
+
+## 📅 Date: 29 December 2025
+### 📌 Topics Covered
+- Started working on **scenario-based problems**
+- ✅ Solved the **Snake and Ladder** program
+- ✅ Solved the **Temperature Analysis** problem using a 2D array
+  - Calculated daily average temperatures
+  - Identified hottest and coldest days
