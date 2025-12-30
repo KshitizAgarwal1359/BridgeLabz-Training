@@ -59,7 +59,7 @@ class TemperatureAnalysis
         {
             for(int j = 0; j < 24; j++)
             {
-                data[i,j]=0f +(float)random.NextDouble()*50f;  //generating random temperature between 15 deg cel to 50 deg cel
+                data[i,j]=0f +(float)random.NextDouble()*50f;  //generating random temperature between 0 deg cel to 50 deg cel
             }
         }
         return data;
