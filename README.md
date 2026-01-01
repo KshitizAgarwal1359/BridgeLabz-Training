@@ -237,4 +237,62 @@ Used to check object type at runtime
 Returns true or false
 
 Helps in safe type checking
+
+# 📅 Date: 01 January 2026
+
+## 🚀 Activities Completed
+
+## 🧾 Invoice Generator (Scenario-Based Project)
+
+Designed a menu-driven invoice system using C#
+
+Implemented item input, pricing, and payment status handling
+
+Parsed user input to generate structured invoice data
+
+Applied classes and objects instead of static logic
+
+Improved error handling and program flow for real-world usage
+
+## ☕ Cafeteria Menu Generator
+
+Built a menu-driven cafeteria application using arrays and methods
+
+Implemented Admin and User roles with authentication
+
+Admin can set daily menu items with prices
+
+User can select items, place orders, and generate bills
+
+Added billing logic with total price calculation
+
+## 🧱 Core OOP Concepts in C#
+
+Understood the difference between Classes vs Objects
+
+Learned how objects interact and share data in real applications
+
+Practiced object creation, constructor usage, and object sharing
+
+Applied OOP concepts in scenario-based console applications
+
+## 📊 Software Design & Diagrams
+
+Studied Class Diagrams to represent system structure
+
+Learned Object Diagrams to visualize runtime objects
+
+Understood Sequence Diagrams to represent execution flow
+
+Connected theoretical diagrams with actual code implementation
+
+## 🧠 Key Takeaways
+
+Improved understanding of real-world application design
+
+Strengthened problem-solving using OOP
+
+Learned to break problems into multiple classes with clear roles
+
+Gained confidence in menu-driven and scenario-based programs
  
