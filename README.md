@@ -122,5 +122,119 @@ Calculated daily average temperatures
 
 Identified hottest and coldest days
 
+# 📅 Date: 30 January 2025
 
+✅ Work Completed
+
+Completed Library Management System scenario-based questions
+
+Completed Sentence Formatter & Paragraph Analyzer scenario
+
+Learned basics of Constructors in C#
+
+Understood Class vs Instance (Object) concepts
+
+## 📚 Library Management System (Brief)
+
+Stored book details (title, author, status) using arrays
+
+Implemented book search using partial title matching
+
+Added check-in and check-out functionality
+
+Used methods to organize program logic
+
+Practiced admin and user based flow
+
+## ✍️ Sentence Formatter (Based on Code)
+
+Removes extra and leading spaces
+
+Capitalizes the first letter of each sentence
+
+Maintains single spacing between words
+
+Adds space after sentence-ending punctuation
+
+Formats text without using built-in string methods
+
+## 🧱 Constructors
+
+Used to initialize objects
+
+Same name as class
+
+Automatically called during object creation
+
+## 🆚 Class vs Instance
+
+Class: Blueprint of an object
+
+Instance: Real object created from a class
+
+
+# 📅 Date: 31 January 2025
+
+✅ Activities Completed
+
+Completed Bank System scenario-based problem
+
+Completed Utility (Math Operations) scenario-based problem
+
+Learned and practiced:
+
+static
+
+sealed
+
+is operator
+
+##  🏦 Bank System – Features (5 Points)
+
+Stores bank and branch details using classes
+
+Separates manager and user operations
+
+Allows customer account creation and viewing details
+
+Uses menu-driven structure for interaction
+
+Applies OOP concepts like constructors and access modifiers
+
+##  🔢 Math Utility Program – Features (5 Points)
+
+Calculates factorial with negative number validation
+
+Checks whether a number is prime
+
+Finds GCD using the Euclidean algorithm
+
+Computes nᵗʰ Fibonacci number iteratively
+
+Uses menu-driven program with reusable static methods
+
+## 🧠 Concepts Learned (Brief)
+🔹 static
+
+Belongs to the class, not objects
+
+Accessed without creating an instance
+
+Used for utility methods
+
+🔹 sealed
+
+Prevents a class from being inherited
+
+Used to restrict further extension
+
+Improves security and design control
+
+🔹 is Operator
+
+Used to check object type at runtime
+
+Returns true or false
+
+Helps in safe type checking
  
