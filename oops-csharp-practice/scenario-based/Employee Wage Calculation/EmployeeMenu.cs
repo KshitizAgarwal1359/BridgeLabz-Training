@@ -11,12 +11,20 @@ namespace BridgeLabz.Employee_Wage_Calculation
         public static void Start()
         {
             Console.WriteLine("Employee Wage Computation Program\n");
+
             Employee employee = new Employee();
             employee.AddEmployee();
-            IEmployeeAttendance attendanceService = new EmployeeAttendanceImpl(); //UC1
-            int attendanceStatus = ((EmployeeAttendanceImpl)attendanceService).AttendanceStatus;
-            IEmployeeWage wageService = new EmployeeDailyWageImpl();
-            wageService.CalculateDailyWage(employee, attendanceStatus);
+
+            // Interface reference
+            IEmployee employeeService = new EmployeeUtilityImpl();
+
+            int attendance = employeeService.CheckAttendance(employee);
+
+            employeeService.CalculateDailyWage(employee, attendance);
+            employeeService.CalculatePartTimeWage(employee, attendance);
+            employeeService.CalculateWageUsingSwitch(employee, attendance);
+            employeeService.CalculateMonthlyWage(employee);
+            employeeService.CalculateWageTillCondition(employee);
         }
     }
 }
