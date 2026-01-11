@@ -295,4 +295,177 @@ Strengthened problem-solving using OOP
 Learned to break problems into multiple classes with clear roles
 
 Gained confidence in menu-driven and scenario-based programs
- 
+
+# 📅 Date: 2 January 2026
+## 📘 Topics Learned Today – Inheritance in C#
+
+Inheritance allows a class to acquire properties and methods of another class, promoting code reusability and maintainability.
+
+Explored types of inheritance:
+
+Single Level Inheritance
+
+Multilevel Inheritance
+
+Hierarchical Inheritance
+
+Understood key concepts:
+
+Key Features of Inheritance
+
+Method Overriding
+
+Constructor Inheritance in C#
+
+Learned how Polymorphism works with Inheritance to achieve dynamic behavior.
+
+Studied the role of Access Modifiers (public, protected, private) in inheritance scenarios.
+
+## 🚌 Bus Route Distance Tracker
+
+Implemented a while loop to calculate and track the total distance as each bus stop is added.
+
+Allowed the passenger to exit the route based on user confirmation, ensuring interactive control.
+
+## 🎉 Festival Lucky Draw
+
+Used conditional statements and modulus operator to check if a drawn number is divisible by both 3 and 5.
+
+Applied loops and continue statement to handle multiple visitors and skip invalid inputs.
+
+# 📅 Date: 5 January 2026
+## 📘 Topics Learned Today – OOP Concepts in C#
+
+Encapsulation: Learned how to protect data using access modifiers and expose it safely through properties.
+
+Polymorphism: Understood how the same method can behave differently based on object type.
+
+Interface: Explored how interfaces define contracts that classes must implement.
+
+Abstract Classes: Learned to use abstract methods and shared base functionality for derived classes.
+
+## 🏥 Hospital Patient Management System
+
+Applied Encapsulation and Inheritance by designing Patient as a base class with InPatient and OutPatient as derived classes.
+
+Implemented Abstraction and Polymorphism using IPayable interface and overridden DisplayInfo() methods.
+
+## 🚗 Vehicle Rental Application
+
+Designed a class hierarchy using Vehicle as a base class with Bike, Car, and Truck as derived classes.
+
+Used protected access modifiers and IRentable interface to calculate rent dynamically for different vehicle types.
+
+# 📅 Date: 6 January 2026
+## 🎯 Goal
+
+Design real-world applications using Inheritance, Interfaces, and Polymorphism in C#.
+
+## 📘 Concepts Applied
+
+Inheritance and Polymorphism
+
+Interfaces (IFlyable, ISwimmable)
+
+Arrays and Runtime Type Checking
+
+Encapsulation and Method Abstraction
+
+## 🐦 Bird Sanctuary Management System
+
+Implemented Inheritance and Interfaces by defining common bird attributes in a base Bird class and behaviors using IFlyable and ISwimmable.
+
+Used Polymorphism with arrays to iterate through bird objects, check implemented interfaces, and invoke appropriate behaviors dynamically.
+
+## 📞 Customer Service Call Log Manager
+
+Applied Encapsulation and Object-Oriented Design by storing call details in a CallLog class and managing them using an array.
+
+Used OOP-based methods to add logs, filter data by time range, and search messages using keyword matching.
+
+# 📅 Date: 7 January 2026
+## 📘 Topic: Introduction to Data Structures in C#
+🔹 Concepts Covered
+
+Introduction to Data Structures and their importance in efficient data handling
+
+Key Features of Data Structures in C#
+
+Types of Data Structures in C#
+
+Linear Data Structures
+
+Non-Linear Data Structures
+
+Linked List Concepts
+
+Singly Linked List
+
+Doubly Linked List
+
+Circular Linked List
+
+## 🧠 What I Learned Today
+
+Understood how data structures improve performance and memory management in applications.
+
+Learned the working principles and differences between singly, doubly, and circular linked lists.
+
+Gained clarity on how nodes, pointers, and references are used to dynamically manage data.
+
+# 📅 Date: 8 January 2026
+## 📘 Topic: Stack, Queue, and Hashing Concepts
+🔹 Concepts Covered
+
+Stack
+
+LIFO (Last In, First Out) principle
+
+Basic operations: Push, Pop, Peek
+
+Queue
+
+FIFO (First In, First Out) principle
+
+Basic operations: Enqueue, Dequeue, Front
+
+HashMap & Hashing Function
+
+Key–Value pair storage
+
+Role of hashing functions in fast data access
+
+## 🧠 What I Learned Today
+
+Understood how Stacks and Queues manage data flow using restricted access patterns.
+
+Learned the working of HashMaps and hashing functions for efficient searching and insertion.
+
+Implemented basic Stack, Queue, and HashMap operations using C#.
+
+# 📅 Date: 9 January 2026
+## 📘 Topics Covered: Sorting Algorithms & Problem Solving
+🔹 Sorting Algorithms Learned
+
+Bubble Sort
+
+Insertion Sort
+
+Merge Sort
+
+Quick Sort
+
+## 🧠 What I Learned
+
+Understood the working principles, use cases, and time complexities of different sorting algorithms.
+
+Practiced implementing these algorithms to strengthen logic building and problem-solving skills.
+
+## 🏧 ATM Dispenser Logic
+🔹 Problem Scenarios
+
+Scenario A: Calculated the minimum number of currency notes required to dispense ₹880 using available denominations.
+
+Scenario B: Modified the logic by temporarily removing ₹500 notes and recalculated the optimal combination.
+
+Scenario C: Implemented a fallback strategy to display an alternative combination when exact change is not possible.
