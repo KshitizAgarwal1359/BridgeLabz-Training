@@ -3,12 +3,14 @@ namespace BridgeLabz.AddressBookSystem
 {
     class AddressBookUtilityImpl : IAddressBook
     {
-        private AddressBookModel[] contacts;
-        private int contactCount;
+        //uc6 – Dictionary of Address Books
+        private Dictionary<string, AddressBookModel[]> addressBooks;
+        private Dictionary<string, int> contactCounts;
+        private string currentAddressBook;
         public AddressBookUtilityImpl()
         {
-            contacts = new AddressBookModel[AddressBookUtility.MAX_CONTACTS];
-            contactCount = 0;
+            addressBooks = new Dictionary<string, AddressBookModel[]>();
+            contactCounts = new Dictionary<string, int>();
         }
         //uc0
         public void DisplayWelcomeMessage(AddressBookModel model)
@@ -17,107 +19,105 @@ namespace BridgeLabz.AddressBookSystem
             Console.WriteLine(model.WelcomeMessage);
             Console.WriteLine("====================================\n");
         }
-        //uc1+uc2+uc5 - add New Contact reusing add contact for uc5, no extra code needed
+        //uc6 – Create New Address Book
+        public void CreateAddressBook()
+        {
+            Console.Write("Enter Address Book Name: ");
+            string name = Console.ReadLine();
+            if (addressBooks.ContainsKey(name))
+            {
+                Console.WriteLine("Address Book already exists\n");
+                return;
+            }
+            addressBooks[name] = new AddressBookModel[AddressBookUtility.MAX_CONTACTS];
+            contactCounts[name] = 0;
+            currentAddressBook = name;
+            Console.WriteLine($"Address Book '{name}' created and selected\n");
+        }
+        //uc1+uc2+uc5 - add New Contact reusing add contact for uc5, no extra code needed add number selected address book 
         public void AddNewContact()
         {
-            if (contactCount >= AddressBookUtility.MAX_CONTACTS)
+            if (currentAddressBook == null)
+            {
+                Console.WriteLine("Create an Address Book first\n");
+                return;
+            }
+            int count = contactCounts[currentAddressBook];
+            if (count >= AddressBookUtility.MAX_CONTACTS)
             {
                 Console.WriteLine("Address Book is Full\n");
                 return;
             }
             AddressBookModel model = new AddressBookModel();
             model.AddContact();
-            contacts[contactCount] = model;
-            contactCount++;
+            addressBooks[currentAddressBook][count] = model;
+            contactCounts[currentAddressBook]++;
             Console.WriteLine("Contact Added Successfully\n");
         }
         //uc2- display All Contacts
         public void DisplayAllContacts()
         {
-            if (contactCount == 0)
+            if (currentAddressBook == null)
+            {
+                Console.WriteLine("Create an Address Book first\n");
+                return;
+            }
+            int count = contactCounts[currentAddressBook];
+            if (count == 0)
             {
                 Console.WriteLine("No contacts available\n");
                 return;
             }
-            for (int i = 0; i < contactCount; i++)
+            for (int i = 0; i < count; i++)
             {
+                AddressBookModel c = addressBooks[currentAddressBook][i];
                 Console.WriteLine($"\nContact {i + 1}");
-                Console.WriteLine($"Name   : {contacts[i].FirstName} {contacts[i].LastName}");
-                Console.WriteLine($"City   : {contacts[i].City}");
-                Console.WriteLine($"Phone  : {contacts[i].PhoneNumber}");
-                Console.WriteLine($"Email  : {contacts[i].Email}");
+                Console.WriteLine($"Name  : {c.FirstName} {c.LastName}");
+                Console.WriteLine($"City  : {c.City}");
+                Console.WriteLine($"Phone : {c.PhoneNumber}");
+                Console.WriteLine($"Email : {c.Email}");
             }
             Console.WriteLine();
         }
         //uc3 – Edit contact using name
         public void EditContact()
         {
-            if (contactCount == 0)
-            {
-                Console.WriteLine("No contacts to edit\n");
-                return;
-            }
-            Console.Write("Enter First Name of contact to edit: ");
+            Console.Write("Enter First Name to edit: ");
             string name = Console.ReadLine();
-            bool found = false;
-            for (int i = 0; i < contactCount; i++)
+            int count = contactCounts[currentAddressBook];
+            for (int i = 0; i < count; i++)
             {
-                if (contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                if (addressBooks[currentAddressBook][i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
                 {
-                    found = true;
-                    Console.WriteLine("Contact Found. Enter new details:");
-                    Console.Write("Enter New Address: ");
-                    contacts[i].Address = Console.ReadLine();
                     Console.Write("Enter New City: ");
-                    contacts[i].City = Console.ReadLine();
-                    Console.Write("Enter New State: ");
-                    contacts[i].State = Console.ReadLine();
-                    Console.Write("Enter New Zip: ");
-                    contacts[i].Zip = Console.ReadLine();
-                    Console.Write("Enter New Phone Number: ");
-                    contacts[i].PhoneNumber = Console.ReadLine();
-                    Console.Write("Enter New Email: ");
-                    contacts[i].Email = Console.ReadLine();
-                    Console.WriteLine("Contact Updated Successfully\n");
-                    break;
+                    addressBooks[currentAddressBook][i].City = Console.ReadLine();
+                    Console.Write("Enter New Phone: ");
+                    addressBooks[currentAddressBook][i].PhoneNumber = Console.ReadLine();
+                    Console.WriteLine("Contact Updated\n");
+                    return;
                 }
             }
-            if (!found)
-            {
-                Console.WriteLine("Contact not found\n");
-            }
+            Console.WriteLine("Contact not found\n");
         }
         //uc4 - delete the contact using name
         public void DeleteContact()
         {
-            if (contactCount == 0)
-            {
-                Console.WriteLine("No contacts to delete\n");
-                return;
-            }
             Console.Write("Enter First Name to delete: ");
             string name = Console.ReadLine();
-            bool found = false;
-            for (int i = 0; i < contactCount; i++)
+            int count = contactCounts[currentAddressBook];
+            for (int i = 0; i < count; i++)
             {
-                if (contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                if (addressBooks[currentAddressBook][i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
                 {
-                    found = true;
-                    // Shift elements left
-                    for (int j = i; j < contactCount - 1; j++)
-                    {
-                        contacts[j] = contacts[j + 1];
-                    }
-                    contacts[contactCount - 1] = null;
-                    contactCount--;
-                    Console.WriteLine("Contact Deleted Successfully\n");
-                    break;
+                    for (int j = i; j < count - 1; j++)
+                        addressBooks[currentAddressBook][j] = addressBooks[currentAddressBook][j + 1];
+                    addressBooks[currentAddressBook][count - 1] = null;
+                    contactCounts[currentAddressBook]--;
+                    Console.WriteLine("Contact Deleted\n");
+                    return;
                 }
             }
-            if (!found)
-            {
-                Console.WriteLine("Contact not found\n");
-            }
+            Console.WriteLine("Contact not found\n");
         }
     }
 }
