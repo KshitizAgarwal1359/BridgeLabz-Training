@@ -20,7 +20,8 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine("1. Add New Contact");
                 Console.WriteLine("2. Display All Contacts");
                 Console.WriteLine("3. Edit Existing Contact");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Delete a contact");
+                Console.WriteLine("5. Exit");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -32,6 +33,8 @@ namespace BridgeLabz.AddressBookSystem
                     case 3:
                         service.EditContact();break;
                     case 4:
+                        service.DeleteContact(); break;
+                    case 5:
                         Console.WriteLine("Exiting Address Book Application...");
                         exit = true; break;
                     default:

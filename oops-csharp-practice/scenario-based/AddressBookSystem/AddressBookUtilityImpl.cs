@@ -87,5 +87,37 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine("Contact not found\n");
             }
         }
+        //uc4 - delete the contact using name
+        public void DeleteContact()
+        {
+            if (contactCount == 0)
+            {
+                Console.WriteLine("No contacts to delete\n");
+                return;
+            }
+            Console.Write("Enter First Name to delete: ");
+            string name = Console.ReadLine();
+            bool found = false;
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    found = true;
+                    // Shift elements left
+                    for (int j = i; j < contactCount - 1; j++)
+                    {
+                        contacts[j] = contacts[j + 1];
+                    }
+                    contacts[contactCount - 1] = null;
+                    contactCount--;
+                    Console.WriteLine("Contact Deleted Successfully\n");
+                    break;
+                }
+            }
+            if (!found)
+            {
+                Console.WriteLine("Contact not found\n");
+            }
+        }
     }
 }

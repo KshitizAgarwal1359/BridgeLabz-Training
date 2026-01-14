@@ -11,5 +11,6 @@ namespace BridgeLabz.AddressBookSystem
         void AddNewContact(); //uc2    
         void DisplayAllContacts(); //uc2
         void EditContact(); //uc3
+        void DeleteContact(); // uc4
         }
 }
