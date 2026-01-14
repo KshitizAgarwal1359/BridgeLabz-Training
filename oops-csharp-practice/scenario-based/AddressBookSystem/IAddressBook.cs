@@ -10,5 +10,6 @@ namespace BridgeLabz.AddressBookSystem
         void DisplayWelcomeMessage(AddressBookModel model); //uc0
         void AddNewContact(); //uc2    
         void DisplayAllContacts(); //uc2
+        void EditContact(); //uc3
         }
 }

@@ -19,7 +19,8 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine("Choose an option:");
                 Console.WriteLine("1. Add New Contact");
                 Console.WriteLine("2. Display All Contacts");
-                Console.WriteLine("3. Exit");
+                Console.WriteLine("3. Edit Existing Contact");
+                Console.WriteLine("4. Exit");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -29,11 +30,12 @@ namespace BridgeLabz.AddressBookSystem
                     case 2:
                         service.DisplayAllContacts(); break;
                     case 3:
+                        service.EditContact();break;
+                    case 4:
                         Console.WriteLine("Exiting Address Book Application...");
                         exit = true; break;
                     default:
-                        Console.WriteLine("Invalid choice. Please try again.\n");
-                        break;
+                        Console.WriteLine("Invalid choice. Try again.\n"); break;
                 }
             }
         }

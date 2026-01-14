@@ -17,7 +17,7 @@ namespace BridgeLabz.AddressBookSystem
             Console.WriteLine(model.WelcomeMessage);
             Console.WriteLine("====================================\n");
         }
-        //uc1+uc2 – add New Contact
+        //uc1+uc2 - add New Contact
         public void AddNewContact()
         {
             if (contactCount >= AddressBookUtility.MAX_CONTACTS)
@@ -27,13 +27,11 @@ namespace BridgeLabz.AddressBookSystem
             }
             AddressBookModel model = new AddressBookModel();
             model.AddContact();
-
             contacts[contactCount] = model;
             contactCount++;
-
             Console.WriteLine("Contact Added Successfully\n");
         }
-        //uc2– display All Contacts
+        //uc2- display All Contacts
         public void DisplayAllContacts()
         {
             if (contactCount == 0)
@@ -41,7 +39,6 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine("No contacts available\n");
                 return;
             }
-            Console.WriteLine("\n----- Address Book Contacts -----");
             for (int i = 0; i < contactCount; i++)
             {
                 Console.WriteLine($"\nContact {i + 1}");
@@ -50,7 +47,45 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine($"Phone  : {contacts[i].PhoneNumber}");
                 Console.WriteLine($"Email  : {contacts[i].Email}");
             }
-            Console.WriteLine("---------------------------------\n");
+            Console.WriteLine();
+        }
+        //uc3 – Edit contact using name
+        public void EditContact()
+        {
+            if (contactCount == 0)
+            {
+                Console.WriteLine("No contacts to edit\n");
+                return;
+            }
+            Console.Write("Enter First Name of contact to edit: ");
+            string name = Console.ReadLine();
+            bool found = false;
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    found = true;
+                    Console.WriteLine("Contact Found. Enter new details:");
+                    Console.Write("Enter New Address: ");
+                    contacts[i].Address = Console.ReadLine();
+                    Console.Write("Enter New City: ");
+                    contacts[i].City = Console.ReadLine();
+                    Console.Write("Enter New State: ");
+                    contacts[i].State = Console.ReadLine();
+                    Console.Write("Enter New Zip: ");
+                    contacts[i].Zip = Console.ReadLine();
+                    Console.Write("Enter New Phone Number: ");
+                    contacts[i].PhoneNumber = Console.ReadLine();
+                    Console.Write("Enter New Email: ");
+                    contacts[i].Email = Console.ReadLine();
+                    Console.WriteLine("Contact Updated Successfully\n");
+                    break;
+                }
+            }
+            if (!found)
+            {
+                Console.WriteLine("Contact not found\n");
+            }
         }
     }
 }
