@@ -17,7 +17,7 @@ namespace BridgeLabz.AddressBookSystem
             Console.WriteLine(model.WelcomeMessage);
             Console.WriteLine("====================================\n");
         }
-        //uc1+uc2 - add New Contact
+        //uc1+uc2+uc5 - add New Contact reusing add contact for uc5, no extra code needed
         public void AddNewContact()
         {
             if (contactCount >= AddressBookUtility.MAX_CONTACTS)
