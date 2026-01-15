@@ -200,5 +200,62 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine("---------------------------------\n");
             }
         }
+        //uc9-feature to search person by city or state in a book
+        public void ViewPersonsByCityOrStateInBook()
+        {
+            if (addressBooks.Count == 0)
+            {
+                Console.WriteLine("No Address Books available\n");
+                return;
+            }
+            //step 1: Select Address Book
+            Console.WriteLine("Available Address Books:");
+            foreach (string bookName in addressBooks.Keys)
+            {
+                Console.WriteLine("- " + bookName);
+            }
+            Console.Write("Enter Address Book name: ");
+            string selectedBook = Console.ReadLine();
+            if (!addressBooks.ContainsKey(selectedBook))
+            {
+                Console.WriteLine("Address Book not found\n");
+                return;
+            }
+            //step 2: Choose City or State
+            Console.Write("Search by (1) City or (2) State: ");
+            int option = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter City/State name: ");
+            string searchValue = Console.ReadLine();
+            AddressBookModel[] contacts = addressBooks[selectedBook];
+            int count = contactCounts[selectedBook];
+            bool found = false;
+            for (int i = 0; i < count; i++)
+            {
+                AddressBookModel contact = contacts[i];
+                if ((option == 1 && contact.City.Equals(searchValue, StringComparison.OrdinalIgnoreCase)) ||
+                    (option == 2 && contact.State.Equals(searchValue, StringComparison.OrdinalIgnoreCase)))
+                {
+                    if (!found)
+                    {
+                        Console.WriteLine($"\nPersons in '{selectedBook}' Address Book:");
+                        found = true;
+                    }
+                    Console.WriteLine("---------------------------------");
+                    Console.WriteLine($"Name  : {contact.FirstName} {contact.LastName}");
+                    Console.WriteLine($"City  : {contact.City}");
+                    Console.WriteLine($"State : {contact.State}");
+                    Console.WriteLine($"Phone : {contact.PhoneNumber}");
+                    Console.WriteLine($"Email : {contact.Email}");
+                }
+            }
+            if (!found)
+            {
+                Console.WriteLine("No persons found for the given city/state\n");
+            }
+            else
+            {
+                Console.WriteLine("---------------------------------\n");
+            }
+        }
     }
 }

@@ -24,7 +24,8 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine("5. Edit Existing Contact");
                 Console.WriteLine("6. Delete a contact");
                 Console.WriteLine("7. Search Person by City or State");
-                Console.WriteLine("8. Exit");
+                Console.WriteLine("8. View Persons by City or State (Specific Address Book)");
+                Console.WriteLine("9. Exit");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -44,6 +45,8 @@ namespace BridgeLabz.AddressBookSystem
                     case 7:
                         service.SearchPersonByCityOrState(); break;
                     case 8:
+                        service.ViewPersonsByCityOrStateInBook(); break;
+                    case 9:
                         Console.WriteLine("Exiting Address Book Application...");
                         exit = true; break;
                     default:
