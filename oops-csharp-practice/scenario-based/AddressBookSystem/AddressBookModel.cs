@@ -59,5 +59,14 @@ namespace BridgeLabz.AddressBookSystem
         {
             return (FirstName + LastName).ToLower().GetHashCode();
         }
+        //uc11 overide toString to write person details
+        public override string ToString()
+        {
+            return $"Name  : {FirstName} {LastName}\n" +
+                $"City: {City}\n" +
+                $"State: {State}\n" +
+                $"Phone: {PhoneNumber}\n" +
+                $"Email: {Email}\n";
+        }
     }
 }

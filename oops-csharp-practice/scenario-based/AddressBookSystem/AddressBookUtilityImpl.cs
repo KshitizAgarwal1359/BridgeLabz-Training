@@ -294,5 +294,44 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine($"Total persons in State '{searchValue}': {totalCount}\n");
             }
         }
+        //uc11-sort contacts using person name alphabetically
+        public void SortContactsByName()
+        {
+            if (currentAddressBook == null)
+            {
+                Console.WriteLine("Please select an Address Book first\n");
+                return;
+            }
+            AddressBookModel[] contacts = addressBooks[currentAddressBook];
+            int count = contactCounts[currentAddressBook];
+            if (count <= 1)
+            {
+                Console.WriteLine("Not enough contacts to sort\n");
+                return;
+            }
+            //bubble sort by firstName + lastName
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = 0; j < count - i - 1; j++)
+                {
+                    string name1 = contacts[j].FirstName + contacts[j].LastName;
+                    string name2 = contacts[j + 1].FirstName + contacts[j + 1].LastName;
+                    if (string.Compare(name1, name2, StringComparison.OrdinalIgnoreCase) > 0)
+                    {
+                        //swap
+                        AddressBookModel temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+            Console.WriteLine($"\nContacts in '{currentAddressBook}' Address Book (Sorted by Name):");
+            Console.WriteLine("--------------------------------------------------");
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine(contacts[i]); // Uses ToString()
+                Console.WriteLine("--------------------------------------------------");
+            }
+        }
     }
 }
