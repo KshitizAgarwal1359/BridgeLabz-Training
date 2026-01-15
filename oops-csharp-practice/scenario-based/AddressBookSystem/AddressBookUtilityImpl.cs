@@ -152,5 +152,53 @@ namespace BridgeLabz.AddressBookSystem
             currentAddressBook = nameToSelect;
             Console.WriteLine($"Address Book '{currentAddressBook}' selected\n");
         }
+        //uc8 searching person by city or state
+        public void SearchPersonByCityOrState()
+        {
+            if (addressBooks.Count == 0)
+            {
+                Console.WriteLine("No Address Books available\n");
+                return;
+            }
+            Console.Write("Search by (1) City or (2) State: ");
+            int option = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter name to search: ");
+            string searchValue = Console.ReadLine();
+            bool found = false;
+            foreach (var entry in addressBooks)
+            {
+                string addressBookName = entry.Key;
+                AddressBookModel[] contacts = entry.Value;
+                int count = contactCounts[addressBookName];
+                for (int i = 0; i < count; i++)
+                {
+                    AddressBookModel contact = contacts[i];
+                    if ((option == 1 && contact.City.Equals(searchValue, StringComparison.OrdinalIgnoreCase)) ||
+                        (option == 2 && contact.State.Equals(searchValue, StringComparison.OrdinalIgnoreCase)))
+                    {
+                        if (!found)
+                        {
+                            Console.WriteLine("\nSearch Results:");
+                            found = true;
+                        }
+                        Console.WriteLine("---------------------------------");
+                        Console.WriteLine($"Address Book : {addressBookName}");
+                        Console.WriteLine($"Name: {contact.FirstName} {contact.LastName}");
+                        Console.WriteLine($"City: {contact.City}");
+                        Console.WriteLine($"State: {contact.State}");
+                        Console.WriteLine($"Phone: {contact.PhoneNumber}");
+                        Console.WriteLine($"Email: {contact.Email}");
+                    }
+                }
+            }
+            if (!found)
+            {
+                Console.WriteLine("No matching contacts found\n");
+            }
+            else
+            {
+                Console.WriteLine("---------------------------------\n");
+            }
+        }
     }
 }
