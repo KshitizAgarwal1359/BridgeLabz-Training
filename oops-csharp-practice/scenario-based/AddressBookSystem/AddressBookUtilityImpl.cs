@@ -257,5 +257,42 @@ namespace BridgeLabz.AddressBookSystem
                 Console.WriteLine("---------------------------------\n");
             }
         }
+        //uc10-count person by city or state across all address books
+        public void CountPersonsByCityOrState()
+        {
+            if (addressBooks.Count == 0)
+            {
+                Console.WriteLine("No Address Books available\n");
+                return;
+            }
+            Console.Write("Count by (1) City or (2) State: ");
+            int option = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter City/State name: ");
+            string searchValue = Console.ReadLine();
+            int totalCount = 0;
+            foreach (var entry in addressBooks)
+            {
+                string addressBookName = entry.Key;
+                AddressBookModel[] contacts = entry.Value;
+                int count = contactCounts[addressBookName];
+                for (int i = 0; i < count; i++)
+                {
+                    AddressBookModel contact = contacts[i];
+                    if ((option == 1 && contact.City.Equals(searchValue, StringComparison.OrdinalIgnoreCase)) ||
+                        (option == 2 && contact.State.Equals(searchValue, StringComparison.OrdinalIgnoreCase)))
+                    {
+                        totalCount++;
+                    }
+                }
+            }
+            if (option == 1)
+            {
+                Console.WriteLine($"Total persons in City '{searchValue}': {totalCount}\n");
+            }
+            else if (option == 2)
+            {
+                Console.WriteLine($"Total persons in State '{searchValue}': {totalCount}\n");
+            }
+        }
     }
 }

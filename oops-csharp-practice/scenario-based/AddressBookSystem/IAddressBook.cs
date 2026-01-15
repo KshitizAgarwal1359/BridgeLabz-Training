@@ -16,5 +16,6 @@ namespace BridgeLabz.AddressBookSystem
         void SelectAddressBook(); //refactor of uc6
         void SearchPersonByCityOrState(); //uc8
         void ViewPersonsByCityOrStateInBook(); //uc9
+        void CountPersonsByCityOrState(); //uc10
         }
 }
