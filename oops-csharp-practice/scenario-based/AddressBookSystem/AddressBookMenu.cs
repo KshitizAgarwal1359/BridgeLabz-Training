@@ -18,11 +18,12 @@ namespace BridgeLabz.AddressBookSystem
             {
                 Console.WriteLine("Choose an option:");
                 Console.WriteLine("1. Create Address Book");
-                Console.WriteLine("2. Add New Contact");
-                Console.WriteLine("3. Display All Contacts");
-                Console.WriteLine("4. Edit Existing Contact");
-                Console.WriteLine("5. Delete a contact");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("2. Select Address Book");
+                Console.WriteLine("3. Add New Contact");
+                Console.WriteLine("4. Display All Contacts");
+                Console.WriteLine("5. Edit Existing Contact");
+                Console.WriteLine("6. Delete a contact");
+                Console.WriteLine("7. Exit");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -30,14 +31,16 @@ namespace BridgeLabz.AddressBookSystem
                     case 1:
                         service.CreateAddressBook(); break;
                     case 2:
-                        service.AddNewContact(); break;
+                        service.SelectAddressBook(); break;
                     case 3:
-                        service.DisplayAllContacts(); break;
+                        service.AddNewContact(); break;
                     case 4:
-                        service.EditContact();break;
+                        service.DisplayAllContacts(); break;
                     case 5:
-                        service.DeleteContact(); break;
+                        service.EditContact();break;
                     case 6:
+                        service.DeleteContact(); break;
+                    case 7:
                         Console.WriteLine("Exiting Address Book Application...");
                         exit = true; break;
                     default:

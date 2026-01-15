@@ -46,5 +46,18 @@ namespace BridgeLabz.AddressBookSystem
                 Email = Console.ReadLine();
                 Console.WriteLine("\nContact Created Successfully\n");
             }
+        //uc7-ovveride equals for duplicate check
+        public override bool Equals(object obj) 
+        {
+            if (obj == null || !(obj is AddressBookModel))
+                return false;
+            AddressBookModel other = (AddressBookModel)obj;
+            return this.FirstName.Equals(other.FirstName, StringComparison.OrdinalIgnoreCase)
+                && this.LastName.Equals(other.LastName, StringComparison.OrdinalIgnoreCase);
         }
+        public override int GetHashCode() //have to override this because we overrode Equals.this gives hash code irrespective of the case of letters
+        {
+            return (FirstName + LastName).ToLower().GetHashCode();
+        }
+    }
 }

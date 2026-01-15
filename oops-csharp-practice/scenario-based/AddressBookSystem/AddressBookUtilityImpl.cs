@@ -39,20 +39,30 @@ namespace BridgeLabz.AddressBookSystem
         {
             if (currentAddressBook == null)
             {
-                Console.WriteLine("Create an Address Book first\n");
+                Console.WriteLine("Please select an Address Book first\n");
                 return;
             }
+            AddressBookModel newContact = new AddressBookModel();
+            newContact.AddContact();
+            AddressBookModel[] contacts = addressBooks[currentAddressBook];
             int count = contactCounts[currentAddressBook];
+            //uc7 –duplicate check
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].Equals(newContact))
+                {
+                    Console.WriteLine("Duplicate contact found. Not added.\n");
+                    return;
+                }
+            }
             if (count >= AddressBookUtility.MAX_CONTACTS)
             {
-                Console.WriteLine("Address Book is Full\n");
+                Console.WriteLine("Address Book is full\n");
                 return;
             }
-            AddressBookModel model = new AddressBookModel();
-            model.AddContact();
-            addressBooks[currentAddressBook][count] = model;
+            contacts[count] = newContact;
             contactCounts[currentAddressBook]++;
-            Console.WriteLine("Contact Added Successfully\n");
+            Console.WriteLine($"Contact added to '{currentAddressBook}' Address Book\n");
         }
         //uc2- display All Contacts
         public void DisplayAllContacts()
@@ -118,6 +128,29 @@ namespace BridgeLabz.AddressBookSystem
                 }
             }
             Console.WriteLine("Contact not found\n");
+        }
+        //uc6– Select Address Book refactor uc6
+        public void SelectAddressBook()
+        {
+            if (addressBooks.Count == 0)
+            {
+                Console.WriteLine("No Address Books available. Create one first.\n");
+                return;
+            }
+            Console.WriteLine("Available Address Books:");
+            foreach (string name in addressBooks.Keys)
+            {
+                Console.WriteLine("- " + name);
+            }
+            Console.Write("Enter Address Book name to select: ");
+            string nameToSelect = Console.ReadLine();
+            if (!addressBooks.ContainsKey(nameToSelect))
+            {
+                Console.WriteLine("Address Book not found\n");
+                return;
+            }
+            currentAddressBook = nameToSelect;
+            Console.WriteLine($"Address Book '{currentAddressBook}' selected\n");
         }
     }
 }

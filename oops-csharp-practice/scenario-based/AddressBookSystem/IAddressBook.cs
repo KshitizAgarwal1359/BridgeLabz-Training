@@ -13,5 +13,6 @@ namespace BridgeLabz.AddressBookSystem
         void EditContact(); //uc3
         void DeleteContact(); // uc4
         void CreateAddressBook(); //uc6
+        void SelectAddressBook(); //refactor of uc6
         }
 }
