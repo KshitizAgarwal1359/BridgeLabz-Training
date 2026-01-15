@@ -469,3 +469,145 @@ Scenario A: Calculated the minimum number of currency notes required to dispense
 Scenario B: Modified the logic by temporarily removing ₹500 notes and recalculated the optimal combination.
 
 Scenario C: Implemented a fallback strategy to display an alternative combination when exact change is not possible.
+
+# 📅 Date: 12 January 2026
+## 📘 What I Learned
+
+On this day, I focused on building scenario-based applications using Object-Oriented Programming (OOP) principles. The learning emphasized applying programming concepts to real-world problems.
+
+🔹 Key Learnings
+
+Implemented scenario-based programs using OOP concepts
+
+Designed classes and methods for real-world applications
+
+Applied conditional logic for effective decision-making
+
+Improved understanding of data modeling and business rules
+
+## 🧩 Scenario-Based Implementations
+## 🔩 Metal Custom Manufacturing System
+
+A system designed to manage and process custom metal manufacturing orders.
+
+Features Implemented:
+
+Calculated total manufacturing cost based on inputs
+
+Displayed a detailed order summary using well-structured classes and methods
+
+## 💰 Loan Processing System
+
+A financial application to evaluate loan applications and determine eligibility.
+
+Features Implemented:
+
+Created a customer loan profile
+
+Calculated:
+
+Interest amount
+
+Monthly EMI
+
+Implemented loan eligibility checks using conditional logic
+
+Displayed a clear approval or rejection report
+
+# 📅 Date: 13 January 2026
+## 📘 What I Learned
+
+## 🔍 Key Learnings
+
+Learned the Linear Search algorithm
+
+Learned the Binary Search algorithm
+
+Understood differences in time complexity and use cases
+
+Applied searching techniques to real-world scenarios
+
+## 🧩 Scenario-Based Assignments
+## 📚 Bookshelf Management System
+
+A system designed to manage and search book records efficiently.
+
+Features Implemented:
+
+Stored book records using arrays
+
+Searched books by title using search algorithms
+
+Displayed book availability status
+
+Ensured efficient data access and retrieval
+
+## 🎬 Movie Scheduler System
+
+A system to manage movies and their show timings.
+
+Features Implemented:
+
+Stored movie details and show timings in arrays
+
+Implemented search functionality by movie name
+
+Displayed movie schedules dynamically
+
+Practiced structured programming and data handling
+
+# 📅 Date: 14 January 2026
+## 🧩 Topic
+
+Address Book Application – Use Case–Based Development
+
+## 📘 What I Learned
+
+On this day, I focused on use case–driven program design and applied OOP principles to build a structured Address Book application.
+
+## 🔹 Key Learnings
+
+Understood the importance of Use Case–driven design in application development
+
+Designed the overall structure of an Address Book System
+
+Created a Contact class with the following attributes:
+
+First Name
+
+Last Name
+
+Phone Number
+
+Email
+
+City
+
+State
+
+ZIP Code
+
+Practiced object creation, storage, and manipulation
+
+Improved understanding of:
+
+Object-Oriented Programming (OOP) concepts
+
+Encapsulation
+
+Class relationships and responsibilities
+
+## 📂 Address Book System – UC1 to UC6
+## 📌 Use Case Descriptions
+
+UC1: Created AddressBook and Contact classes
+
+UC2: Added new contact details to the Address Book
+
+UC3: Edited existing contact details using the person’s name
+
+UC4: Deleted a contact by searching for the person’s name
+
+UC5: Displayed all contact details stored in the Address Book
+
+UC6: Refactored the system to support multiple Address Books
