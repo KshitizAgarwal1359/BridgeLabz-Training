@@ -611,3 +611,230 @@ UC4: Deleted a contact by searching for the person’s name
 UC5: Displayed all contact details stored in the Address Book
 
 UC6: Refactored the system to support multiple Address Books
+
+# 📅 Date: January 15, 2026
+
+## 🧠 What I Learned
+
+Extended the Address Book application with advanced use cases
+
+Improved searching, sorting, and data grouping
+
+Learned how to manage multiple Address Books
+
+Strengthened practical understanding of collections and object-oriented design
+
+## 🚀 Use Cases Implemented
+
+UC7: Search persons by City or State
+
+UC8: View persons grouped by City or State
+
+UC9: Count persons by City or State
+
+UC10: Sort contacts by Name, City, State, and ZIP
+
+UC11: Manage multiple Address Books
+
+# 📅 Date: January 16, 2026
+
+## 🧠 What I Learned
+
+Strengthened problem-solving skills using real-world scenarios
+
+Designed clean and modular programs using OOP concepts
+
+Applied conditional logic, loops, and collections effectively
+
+Improved understanding of program flow and user interaction
+
+## 🚦 Traffic Manager System
+
+Designed a traffic control simulation program
+
+Focused on logic clarity and real-world scenario mapping
+
+Emphasized structured decision-making and flow control
+
+## 📚 Bookshelf Management Program
+
+Built a bookshelf application to manage books
+
+Stored book details such as:
+
+Title
+
+Author
+
+Availability
+
+Implemented search functionality for books
+
+Displayed book details dynamically
+
+Practiced array handling and iteration
+
+## 🔧 Concepts Practiced
+
+Arrays
+
+Searching logic
+
+Methods and modular design
+
+## 🌐 BrowserBuddy Application
+
+Designed a simple browser-like navigation system
+
+Simulated page navigation using menu-driven logic
+
+Implemented:
+
+Forward navigation
+
+Backward navigation
+
+History tracking
+
+Strengthened understanding of stack-based navigation concepts
+
+## 🔧 Concepts Practiced
+
+Stack logic
+
+Menu-driven programs
+
+Real-time scenario simulation
+
+# 📅 Date: January 17, 2026
+
+## 🧠 What I Learned
+
+Learned how to choose sorting algorithms based on data size and use case
+
+Understood performance differences between simple and efficient sorting techniques
+
+Applied sorting logic to real-world scenarios
+
+## 🚀 Scenarios Implemented
+
+### 🛍️FlashDealz (Quick Sort): Sorted large-scale product data by discount for high-performance processing
+
+### 👟 FitnessTracker (Bubble Sort): Ranked daily step counts for a small user group with frequent real-time updates
+
+# 📅 Date: January 19, 2026
+
+## 🧠 What I Learned
+
+Practical use of Linked List, Stack, and HashMap
+
+Applied core data structures to real-world problem statements
+
+Handled edge cases such as:
+
+Null references
+
+Missing or invalid data
+
+Improved defensive programming and logical flow control
+
+## 🚀 Scenarios Implemented
+### 📦 ParcelTracker – Delivery Chain Management
+
+(Singly Linked List)
+
+Modeled parcel delivery stages as nodes in a singly linked list
+
+Enabled forward-only tracking of delivery progress
+
+Added support for custom intermediate checkpoints
+
+Handled lost or missing parcels using null pointer checks
+
+### 📝 ExamProctor – Online Exam Review System
+
+(Stack + HashMap)
+
+Tracked question navigation using a Stack
+
+Stored student answers using a HashMap
+
+Calculated the final score using modular functions
+
+# 📅 Date: January 20, 2026
+
+## 📌 Story 1: Sorting Aadhar Numbers (Radix Sort)
+
+Context: Efficiently sorting large 12-digit Aadhar numbers.
+
+Scenarios Implemented
+
+Scenario A: Sorted Aadhar numbers in ascending order using Radix Sort
+
+Scenario B: Searched for a specific Aadhar number using Binary Search
+
+Scenario C: Maintained stable ordering for numbers with the same prefix
+
+Concepts Practiced
+
+Radix Sort
+
+Binary Search
+
+Time & Space Complexity
+
+## 🧩 Generics Assignment
+
+Implemented generic classes and generic methods
+
+Improved type safety and code reusability
+
+Designed flexible, reusable program components
+
+## 🔐 Story 2: Password Cracker Simulator
+
+(Backtracking)
+Context: Simulated brute-force password cracking.
+
+Scenarios Implemented
+
+Scenario A: Generated all possible strings of length n
+
+Scenario B: Stopped execution immediately when the password matched
+
+Scenario C: Analyzed time and space complexity of the approach
+
+# 📅 Date: January 21, 2026
+
+## 📌 Topic
+
+Merge Sort, Queue, and HashMap in Real-World Scenarios
+
+## 🚀 Scenarios Implemented
+## 🎓 EduResults – Rank Sheet Generator
+
+Used Merge Sort to generate a state-wise rank list
+
+Maintained stable sorting for students with duplicate marks
+
+Implemented a menu-driven, user-input based C# console program
+
+Followed a clean OOP-based design structure
+
+## 🛒 SmartCheckout – Supermarket Billing Queue
+
+Used Queue (FIFO) for customer billing flow
+
+Implemented HashMap (Dictionary) for fast item price and stock lookup
+
+Updated item stock dynamically after each purchase
+
+Built a fully menu-driven, user-interactive console application
+
+## 🧩 Key Learnings
+
+Choosing appropriate data structures based on problem scenarios
+
+Understanding stable sorting and FIFO processing
+
+Writing clean, modular, and maintainable OOP console applications
