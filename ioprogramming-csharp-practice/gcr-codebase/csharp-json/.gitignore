@@ -1,0 +1,9 @@
+# Ignore build output folders
+bin/
+obj/
+
+# Ignore default Program file
+Program.cs
+
+# Ignore project file
+csharp-json.csproj
