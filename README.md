@@ -838,3 +838,187 @@ Choosing appropriate data structures based on problem scenarios
 Understanding stable sorting and FIFO processing
 
 Writing clean, modular, and maintainable OOP console applications
+
+# 🗓️Date: January 22, 2026
+
+## 🚀 What I Learned
+
+Gained a clear understanding of Exceptions and Exception Handling in C#
+
+Learned to use try–catch–finally blocks effectively
+
+Implemented Custom Exceptions for better error handling
+
+Studied Circular Linked Lists and understood their advantages
+
+Applied Data Structures to solve real-time emergency scenarios
+
+## 🏥 Scenario Implemented
+AmbulanceRoute – Emergency Patient Navigation
+
+Implemented a Circular Linked List
+
+Each node represents a hospital unit
+
+Rotated through units to locate the nearest available emergency unit
+
+Dynamically removed units that were under maintenance
+
+## ✅ Tasks Completed
+
+Built a Circular Linked List from scratch
+
+Simulated ambulance routing logic using real-world constraints
+
+
+# 📅 Date: January 23, 2026
+
+## 🚀 What I Learned
+
+Explored Regex metacharacters and quantifiers
+
+Implemented email, password, and phone number validation
+
+Learned the C# Regex API and commonly used methods
+
+Worked with the NUnit framework, including annotations and assertions
+
+
+# 📅 Date: January 24, 2026
+
+## 🧠 Topic
+Annotations & Reflection
+## 🧩 What I Learned
+
+Created custom annotations (attributes) in C#
+
+Applied attributes to methods for metadata tagging
+
+Used Reflection to inspect and process metadata at runtime
+
+# 📅 Date: January 27, 2026
+
+## 🧠 Topics Covered
+
+Annotations
+
+Reflection
+
+Exceptions
+
+Testing
+
+## 🛠️ Projects Implemented
+## 🔍 HealthCheckPro – API Metadata Validator
+
+Validated API annotations using Reflection
+
+Detected missing or invalid metadata
+
+Auto-generated API documentation from annotations
+
+## 🧾 EventTracker – Auto Audit System
+
+Generated structured JSON audit logs using Reflection
+
+Improved system validation and reliability
+
+Centralized auditing for better traceability
+
+# 📅 Date: January 28, 2026
+## 🗂️ Focus Area: Data Handling & Validation
+
+## 🎯 Topic
+Company-Level Coding & Scenario-Based Problems
+## 🧩 What I Learned
+
+Solved real-time, company-level scenario-based coding problems
+
+Applied Annotations, Reflection, JSON handling, and validation logic
+
+Improved understanding of enterprise-style problem solving
+
+Strengthened exception handling and conditional validation skills
+
+## 🧪 Questions & Scenarios Solved
+## 🔍 HealthCheckPro – API Metadata Validator
+
+Used custom annotations and reflection to scan APIs
+
+Auto-generated structured API documentation
+
+Validated required metadata and detected missing annotations
+
+## 🧾 EventTracker – Auto Audit System
+
+Identified annotated methods using Reflection
+
+Generated structured JSON-based audit logs
+
+Improved system reliability through automated validation
+
+## 🧠 Aerovirgil Problem
+
+Solved a logic-based real-world problem
+
+Applied proper conditional checks and flow control
+
+## 🏦 Bank Account Validation
+
+Implemented robust validation logic
+
+Used exception handling for invalid account states
+
+## 📇 Address Book Enhancement
+
+Extended the existing Address Book system
+
+Integrated exception handling and validation
+
+Applied improvements based on previous modifications and design changes
+
+# 📅 Date: January 29, 2026
+
+## 🎯 Topic
+Scenario-Based Application & JSON Handling
+## 🧩 What I Learned
+
+Worked on a real-world scenario-based application
+
+Learned JSON structure and basic data handling techniques
+
+Understood structured data integration in applications
+
+## 🧪 Application Implemented
+## 🎬 Stream-Buzz – Streaming Platform Data Processing & Analytics
+
+Processed and analyzed JSON-based streaming data
+
+Applied structured data handling for analytics and insights
+
+Simulated real-world content platform workflows
+
+# 📅 Date: January 30, 2026
+
+## 🧠 Topic
+Problem Solving & System Design
+
+Focus Areas: String Manipulation & Logistics Systems 🚚
+
+## 🧩 What I Learned
+
+Solved string manipulation challenges (reversal, comparison, transformation)
+
+Designed modular systems using OOPS and DSA
+
+Improved problem-solving skills through scenario-based assignments
+
+## 🧪 Practice & Scenario-Based Assignments
+
+## 🚚 Future Logistics System
+
+Designed end-to-end logistics workflows
+
+Applied object-oriented design principles
+
+Modeled real-world logistics operations
