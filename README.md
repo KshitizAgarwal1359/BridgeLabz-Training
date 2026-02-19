@@ -1022,3 +1022,285 @@ Designed end-to-end logistics workflows
 Applied object-oriented design principles
 
 Modeled real-world logistics operations
+
+
+# 📅 Date February 02, 2026
+
+## ✅ Tasks Completed
+## 🔑 Flip Key Scenario-Based Logic Problem
+
+Successfully analyzed and solved the Flip Key problem using a scenario-driven approach.
+
+Implemented an optimized and reliable solution following best coding practices.
+
+## 🛒 SmartCheckout Project – Code Quality Enhancement
+
+Integrated SonarQube to analyze the SmartCheckout project.
+
+Identified code smells and potential maintainability issues.
+
+Refactored the existing codebase to:
+
+Improve readability
+
+Enhance maintainability
+
+Align with clean code standards
+
+
+# 📅Date February 03, 2026
+
+## 📘 What I Learned
+
+Solved a factory automation hazard detection scenario using logical analysis.
+
+Applied conditional logic and decision-making in C#.
+
+Designed a safety classification system with the following levels:
+
+🟢 Safe
+
+🟡 Warning
+
+🔴 Critical
+
+## 🧪 Tasks Completed
+
+Implemented the Factory Robot Hazard Detection program.
+
+Validated program behavior by testing multiple edge cases.
+
+Ensured accurate hazard classification under boundary conditions.
+
+
+# 📅 Date February 04, 2026
+
+## 📘 What I Learned
+
+Learned the basics of multithreading and its importance in concurrent programming.
+
+Understood how to create and manage threads using the Thread class in C#.
+
+Differentiated between the main thread and child threads in an application.
+
+Explored basic thread execution and the concept of concurrency.
+
+# 📅 Date February 05, 2026
+
+## 🗄️ Topic: DBMS Basics
+## 📘 What I Learned
+
+Gained an introduction to Database Management Systems (DBMS) and their role in application development.
+
+Compared file systems vs DBMS, understanding advantages like data consistency, security, and concurrency.
+
+Learned basic database concepts:
+
+Tables
+
+Rows
+
+Columns
+
+Understood the fundamentals of keys in databases:
+
+Primary Key – uniquely identifies a record
+
+Foreign Key – establishes relationships between tables
+
+Built a strong foundation for SQL queries and database integration.
+
+
+# 📅 Date February 06, 2026
+
+## 🏥📋 Topic: Database Design & Professional Conduct
+## 📘 What I Learned
+
+Designed a Healthcare Application Database Schema with a focus on real-world use cases.
+
+Created database tables with appropriate keys, relationships, and constraints to ensure data integrity.
+
+Understood the importance of attendance, punctuality, and discipline in a professional work environment.
+
+Learned how professional conduct directly impacts project efficiency and team collaboration.
+
+## 🧪 Practice & Assignments
+
+Designed a healthcare database schema covering core entities and relationships.
+
+Implemented SQL queries for common healthcare application scenarios.
+
+Practiced translating business requirements into database structures.
+
+# 📅 Date February 07, 2026
+
+## 🧩 Topics of the Day
+## 🔗 DBMS Integration
+
+Learned how to connect a DBMS with a C# console application.
+
+Understood the flow of data between the application layer and the database.
+
+## 🗄️ Database Schema Design
+
+Designed and structured tables for a healthcare system.
+
+Focused on proper use of keys and relationships for data integrity.
+
+## ✏️ CRUD Operations
+
+Implemented Create, Read, Update, and Delete (CRUD) operations.
+
+Managed healthcare-related data effectively through the application.
+
+## 📘 What I Learned
+
+Practical integration of DBMS with C# applications.
+
+Hands-on experience with SQL-based CRUD operations.
+
+Importance of clean schema design for maintainable and scalable systems.
+
+# 📅 Date February 09, 2026
+
+## 🧩 Topics of the Day
+## 🗂️ Database Schema Design
+
+Finalized and refined database table structures for the Healthcare Application.
+
+Ensured proper use of keys, relationships, and constraints to maintain data integrity.
+
+## 📘 Work Completed
+
+Successfully refined and completed the Healthcare Application.
+
+Validated schema consistency and readiness for integration and testing.
+
+
+# 📅 Date February 10, 2026
+
+## 🧩 Topics of the Day
+## ⏱️ Mock Test – Timed C# Console Application Development
+
+Appeared for a time-bound mock test focused on C# console application development.
+
+Designed and implemented a complete console application within a fixed duration.
+
+## 🧩 Application Design
+
+Applied end-to-end C# concepts, including:
+
+Core C# fundamentals
+
+Object-Oriented Programming (OOPs) principles
+
+Logical problem-solving techniques
+
+## 📘 What I Applied
+
+Translated requirements into a working application design under time constraints.
+
+Practiced efficient coding, structuring, and debugging.
+
+Strengthened ability to manage time and complexity during development.
+
+
+# 📅 Date February 17, 2026
+
+## 🧠 Topics of the Day
+## 📖 Theory Revision
+
+Revised core programming and project concepts covered throughout the training.
+
+Strengthened understanding of fundamental concepts rather than implementing new features.
+
+Focused on conceptual clarity, reinforcing logic, structure, and design principles.
+
+Reviewed theoretical aspects of C#, OOP, DBMS, data structures, and system design.
+
+## 🏙️ TechVille Project Development – Feature Implementation
+## 📌 About TechVille
+
+TechVille Smart City Management System is a comprehensive, story-based project designed to simulate real-world software development for a growing smart city. The project progresses module by module, gradually evolving from basic programming concepts to a production-ready system.
+
+## 🔧 What I Worked on in TechVille
+
+Reviewed and reinforced understanding of previously implemented TechVille modules, ensuring clarity on:
+
+Citizen registration and eligibility logic
+
+Service management workflows
+
+Database and data structure usage
+
+Object-oriented architecture and design patterns
+
+Strengthened knowledge of how individual modules integrate into a complete smart city system.
+
+Analyzed how different concepts (OOP, collections, exceptions, DBMS, algorithms) work together in a large-scale application.
+
+Focused on understanding why specific design decisions and data structures were used in TechVille.
+
+Prepared conceptual groundwork for future feature implementation and optimization within the TechVille project.
+
+
+# 📅 Date February 18, 2026
+
+## 🧩 Topics of the Day
+## 📝 Mock Examination – Problem Solving Assessment
+
+Appeared for a mock exam consisting of two programming questions.
+
+Practiced applying learned concepts under exam-like, time-bound conditions.
+
+## 💍 Jewelry Problem
+
+Solved a logic-based Jewelry problem.
+
+Focused on:
+
+Problem analysis
+
+Logical breakdown
+
+Correct and efficient implementation
+
+## 🔍 Regex Problem
+
+Solved a Regular Expression (Regex) problem.
+
+Applied:
+
+Pattern matching
+
+String validation concepts
+
+Strengthened understanding of data validation using regex.
+
+## 🗄️ Address Book System – ADO.NET Integration
+## 🔧 Changes Implemented
+
+Designed and created a database for the Address Book system.
+
+Implemented ADO.NET to enable database connectivity.
+
+Integrated the database with a C# Console Application.
+
+Replaced file-based or in-memory storage with persistent database storage.
+
+## ⚙️ Functional Enhancements
+
+Established database tables to store contact details.
+
+Implemented CRUD operations using ADO.NET:
+
+Create new contacts
+
+Read/display saved contacts
+
+Update existing contact information
+
+Delete contacts
+
+Ensured proper connection handling and data flow between the application and database.
+
