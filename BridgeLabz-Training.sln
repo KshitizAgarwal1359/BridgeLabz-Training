@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dbms-csharp-practice", "dbms-csharp-practice", "{A8477025-F4AF-81B1-A8C3-14BBE556B865}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scenario-based", "scenario-based", "{EB881FBD-FBB8-0133-0A65-FFA950D8C5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCareClinicApp", "dbms-csharp-practice\scenario-based\HealthCareClinicApp\HealthCareClinicApp.csproj", "{303E6614-6005-E3BD-E995-E12DE1070B96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{303E6614-6005-E3BD-E995-E12DE1070B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303E6614-6005-E3BD-E995-E12DE1070B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303E6614-6005-E3BD-E995-E12DE1070B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303E6614-6005-E3BD-E995-E12DE1070B96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB881FBD-FBB8-0133-0A65-FFA950D8C5B5} = {A8477025-F4AF-81B1-A8C3-14BBE556B865}
+		{303E6614-6005-E3BD-E995-E12DE1070B96} = {EB881FBD-FBB8-0133-0A65-FFA950D8C5B5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEBE13C4-9778-4A1D-AC2E-999ADF75E807}
+	EndGlobalSection
+EndGlobal
