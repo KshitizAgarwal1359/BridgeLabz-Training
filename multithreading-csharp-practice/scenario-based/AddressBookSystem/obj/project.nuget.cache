@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DSoBXYymNwk=",
+  "success": true,
+  "projectFilePath": "c:\\Users\\kshit\\OneDrive\\Desktop\\BridgeLabz\\BridgeLabz-Training\\multithreading-csharp-practice\\scenario-based\\AddressBookSystem\\AddressBookSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kshit\\.nuget\\packages\\csvhelper\\33.1.0\\csvhelper.33.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
