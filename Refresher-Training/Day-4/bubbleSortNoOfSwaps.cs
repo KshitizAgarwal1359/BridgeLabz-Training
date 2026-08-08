@@ -42,7 +42,7 @@ class Result
         }
         Console.WriteLine($"Array is sorted in {swaps} swaps.");
         Console.WriteLine($"First Element: {arr[0]}");
-        Console.WriteLine($"Last Element: {arr[arr.Length-1]}");
+        Console.WriteLine($"Last Element: {arr[^1]}");
     }
 
 }
